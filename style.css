@@ -1,1 +1,26 @@
-﻿
+﻿.rating {
+    border: 1px solid #bbb;
+    display: flex;
+    flex-direction: row-reverse;
+    width: 170px;
+  }
+  
+  .rating input[type="radio"] {
+    display: none;
+    opacity: 0;
+    margin: 30px;
+  }
+  
+  .rating label {
+    color: lightgrey;
+    font-size: 2.5rem;
+  }
+  
+  .rating input:checked ~ label {
+    color: yellow;
+  }
+  
+  .rating input:hover ~ label {
+    color: yellow;
+  }
+  
