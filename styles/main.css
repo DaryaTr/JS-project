@@ -1,0 +1,28 @@
+html {
+    box-sizing: border-box;
+}
+*, *::before, *::after {
+    box-sizing: inherit;
+}
+
+header {
+background-image: url("../img/header_background.png");
+height: 677px;
+background-position: top;
+}
+
+.header_title {
+    text-align: center;
+    font-family: rf de;
+    color: white;
+}
+
+.container {
+    align-self: center;
+
+}
+
+@font-face { 
+    font-family: 'RF Dewi Expanded black'; 
+    src: url("../fonts/RFDewiExpanded-Black.ttf"); 
+ }
