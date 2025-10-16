@@ -11,18 +11,58 @@ height: 677px;
 background-position: top;
 }
 
+
+.header_phone {
+    text-align: left;
+    vertical-align: bottom;
+    font-family: RF Dewi Expanded;
+    color: white;
+    font-size: 14px;
+    margin: 30px;
+}
+.header_callback {
+    text-align: left;
+    vertical-align: text-top;
+    font-family: Inter;
+    color: white;
+    font-size: 14px;
+    margin: 30px;
+}
 .header_title {
     text-align: center;
-    font-family: rf de;
+    vertical-align: top;
+    font-family: RF Dewi Expanded;
     color: white;
-}
-
-.container {
-    align-self: center;
+    font-size: 25px;
+    margin-top: 30px;
 
 }
+.header_email {
+    text-align: left;
+    font-family: RF Dewi Expanded;
+    color: white;
+    font-size: 14px;
+    margin: 30px;
+}
+
+.header_ourmail {
+    text-align: left;
+    font-family: Inter;
+    color: white;
+    font-size: 14px;
+    margin: 30px;
+}
+
+.header_container {
+    display: grid;
+    grid-template-columns: auto  60% auto;
+    grid-template-rows: 30px 30px;
+    margin-left: 12%;
+    margin-right: 12%;
+  }
 
 @font-face { 
-    font-family: 'RF Dewi Expanded black'; 
-    src: url("../fonts/RFDewiExpanded-Black.ttf"); 
- }
+
+    font-family: 'RF Dewi Expanded'; src: url("../fonts/RFDewiExpanded-Bold.ttf"); 
+    font-family: 'Inter';src: url("../fonts/Inter-Bold.ttf");
+}
