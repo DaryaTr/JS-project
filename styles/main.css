@@ -1,3 +1,16 @@
+@font-face { 
+    font-family: 'RF Dewi Expanded'; src: url("../fonts/RFDewiExpanded-Bold.ttf"); 
+}
+@font-face { 
+    font-family: 'Inter'; src: url("../fonts/Inter-Regular.ttf");
+}
+@font-face { 
+    font-family: 'RF Dewi'; src: url("../fonts/RFDewi-Bold.ttf");
+}
+
+
+
+
 html {
     box-sizing: border-box;
 }
@@ -7,10 +20,18 @@ html {
 
 header {
 background-image: url("../img/header_background.png");
-height: 677px;
-background-position: top;
+background-color: black;
+height: 600px;
+background-position: center;
+background-repeat: no-repeat;
+background-size: 120%;
+/*background-blend-mode: darken, luminosity;*/
+
 }
 
+.body {
+    margin: 0px;
+}
 
 .header_phone {
     text-align: left;
@@ -18,31 +39,43 @@ background-position: top;
     font-family: RF Dewi Expanded;
     color: white;
     font-size: 14px;
-    margin: 30px;
+    margin: 0;
 }
 .header_callback {
     text-align: left;
-    vertical-align: text-top;
+    vertical-align: top;
     font-family: Inter;
     color: white;
     font-size: 14px;
-    margin: 30px;
+    font-weight: 400;
+    margin: 0;
 }
-.header_title {
+.header_name {
     text-align: center;
     vertical-align: top;
     font-family: RF Dewi Expanded;
     color: white;
     font-size: 25px;
-    margin-top: 30px;
+    margin: 0;
+    
+}
 
+.header_title {
+    text-align: center;
+    vertical-align: bottom;
+    font-family: RF Dewi;
+    color: white;
+    font-size: 16px;
+    line-height: 150%;
+    font-weight: 200;
+    margin: 0;
 }
 .header_email {
     text-align: left;
     font-family: RF Dewi Expanded;
     color: white;
     font-size: 14px;
-    margin: 30px;
+    margin: 0;
 }
 
 .header_ourmail {
@@ -50,19 +83,125 @@ background-position: top;
     font-family: Inter;
     color: white;
     font-size: 14px;
-    margin: 30px;
+    margin: 0;
+    vertical-align: top;
+    font-weight: 400;
 }
 
 .header_container {
     display: grid;
-    grid-template-columns: auto  60% auto;
-    grid-template-rows: 30px 30px;
-    margin-left: 12%;
-    margin-right: 12%;
-  }
+    grid-template-columns: 200px  62% auto;
+    grid-template-rows: 25px 25px;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 135px;
 
-@font-face { 
+    padding-top: 30px;
+}
+  
+.header_made_by {
+    text-align: center;
+    vertical-align: top;
+    font-family: RF Dewi Expanded;
+    font-weight: 800;
+    color: white;
+    font-size: 60px;
+    margin: 0px;
+    line-height: 120%;
+}
 
-    font-family: 'RF Dewi Expanded'; src: url("../fonts/RFDewiExpanded-Bold.ttf"); 
-    font-family: 'Inter';src: url("../fonts/Inter-Bold.ttf");
+.button_container {
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    justify-items: center;
+    padding-top: 40px;
+}
+
+
+.btn-header {
+    
+    width: 265px;
+    height: 64px;
+    border-radius: 10px;
+    border: 0px;
+    color: black;
+    transition: .2s linear;
+    background: #F4DF74;
+    font-family: RF Dewi Expanded;
+    font-size: 16px;
+    font-weight: 800;
+    
+    /*align-items: center;
+    align-content: center;*/
+}
+
+.btn-header:hover {
+    box-shadow: 0 0 0 2px white, 0 0 0 4px #F4DF74;
+}
+
+.prices {
+    display: grid;
+    justify-items: center;
+    height: 1167px;
+    /*width: 1129px;*/
+    margin-top: 100px;
+}
+
+.merch {
+    display: grid;
+    font-family: RF Dewi Expanded;
+    font-size: 48px;
+    text-align: center;
+    justify-items: center;
+}
+
+.merch_content {
+    display: grid;
+    font-family: Inter;
+    font-size: 16px;
+    
+    font-weight: 400;
+    justify-items: center;
+}
+
+.products {
+    display: grid;
+    grid-template-columns: 400px 400px 400px;
+    grid-template-rows: 400px 400px;
+    
+    margin-left: 15%;
+    margin-right: 15%;
+    margin-bottom: 135px;
+    justify-items: center;
+
+    padding-top: 30px;
+}
+
+.products_box {
+    /*display: grid;
+    grid-template-columns: 400px;
+    grid-template-rows: 400px 30px 30px;*/
+    height: 350px;
+    width:  350px;
+    margin: 0px;
+    padding: 0px;
+}
+.price {
+    font-family: RF Dewi;
+    font-size: 18px;
+    text-align: center;
+    margin: 0px;
+}
+.name {
+    font-family: RF Dewi;
+    font-size: 24px;
+    text-align: left;
+    margin: 0px;
+}
+.video {
+    display: grid;
+    margin: 0px;
+    justify-items: center;
 }
